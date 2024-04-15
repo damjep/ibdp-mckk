@@ -23,6 +23,18 @@ export const IbCoco = () => {
                             About Us
                         </Link>
                     </button>
+
+                    <button>
+                        <Link to="/LearnerProfile">
+                            Learner Profile
+                        </Link>
+                    </button>
+
+                    <button>
+                        <Link to="/Core">
+                            IB Core
+                        </Link>
+                    </button>
                 </Offcanvas.Body>
             </Offcanvas>
         </div>

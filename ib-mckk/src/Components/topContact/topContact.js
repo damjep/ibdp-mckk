@@ -1,8 +1,8 @@
 import { FaPhone  } from "@react-icons/all-files/fa/FaPhone";
 import {FaEnvelope} from "@react-icons/all-files/fa/FaEnvelope"
-import "./nav.css"
+import "./topContact.css"
 
-export default function Nav() {
+export default function Top() {
     return (
         <>
             <div className="nav">

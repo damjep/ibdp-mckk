@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router} from 'react-router-dom';
+import Top from './Components/topContact/topContact';
+import { Nav } from './Components/Nav/navBar';
+import { Footer } from './Components/Footer/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Top />
+      <Nav />
+      <App />
+      <Footer />
+    </Router>
   </React.StrictMode>
 );
 

@@ -1,14 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import Top from './Components/topContact/topContact';
-import { Nav } from './Components/Nav/navBar';
+import "./App.scss";
+import { Route, Routes } from 'react-router-dom';
+import { Main } from './Components/Index/Main';
+import { Bog } from './Components/Bog/bog';
 
 function App() {
-  return (
+  return (<>
     <div className="App">
-      <Top/>
-      <Nav/>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path="/Bog" element={<Bog/>}/>
+      </Routes>
     </div>
+    </>
   );
 }
 

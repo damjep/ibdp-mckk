@@ -18,10 +18,21 @@ export const Nav = () => {
                             Board of Governors
                         </Link>
                     </Dropdown.Item>
+                    <Dropdown.Item>
+                        <Link to="/Admin">
+                            Administration
+                        </Link>
+                    </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
 
-            <button>IB Curriculum</button>
+            <Dropdown>
+                <Dropdown.Toggle>
+                    <Link to="/IbCoco">
+                        IB Curriculum
+                    </Link>
+                </Dropdown.Toggle>
+            </Dropdown>
             <button>Counselling</button>
             <button>Admission</button>
             <button>Student's Corner</button>

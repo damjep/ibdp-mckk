@@ -2,7 +2,7 @@ import './App.css';
 import "./App.scss";
 import { Route, Routes } from 'react-router-dom';
 import { Main } from './Components/Index/Main';
-import { Bog } from './Components/Bog/bog';
+import { Bog } from './Components/Index/Bog/bog';
 
 function App() {
   return (<>

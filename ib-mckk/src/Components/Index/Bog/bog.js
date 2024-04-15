@@ -121,7 +121,7 @@ const Grid = () => {
                 <Col>
                     {/**Please Fix This */}
                     <div>
-                        <img src={require("./assets/dzulkifly.png")} alt="YTM"/>
+                        <img src={require("../Admin/assets/HM.jpg")}  width={"255px"} height={"277px"} alt="YTM"/>
                         <h1>Mohd Shahadan bin Abd Rahman</h1>
                         <h4>Secretary</h4>
                     </div>

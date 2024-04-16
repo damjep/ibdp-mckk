@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import Dropdown from "react-bootstrap/Dropdown";
 import "./nav.css"
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 

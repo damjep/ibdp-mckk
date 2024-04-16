@@ -1,8 +1,10 @@
 import { Card, Container, Row, Col } from "react-bootstrap"
 import {FaMedapps} from "@react-icons/all-files/fa/FaMedapps"
+import { SideBar } from "../sidebar"
 
 export const About = () => {
     return (<>
+    <SideBar />
         <div>
             <Container>
                 <Row>

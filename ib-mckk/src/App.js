@@ -8,6 +8,8 @@ import { IbCoco } from './Components/IB-Coco/ibcoco';
 import { About } from './Components/IB-Coco/About/about';
 import LearnerProfile from './Components/IB-Coco/LearnerProfile/learner';
 import { Core } from './Components/IB-Coco/Core/core';
+import { Teacher } from './Components/Index/Teachers/teachers';
+import { Subject } from './Components/IB-Coco/Subjects/Subjects';
 
 function App() {
   return (<>
@@ -17,12 +19,14 @@ function App() {
         <Route path='/' element={<Main/>}/>
         <Route path="/Bog" element={<Bog/>}/>
         <Route path="/Admin" element={<Admin/>}/>
+        <Route path="/Teacher" element={<Teacher/>}/>
 
         {/**Curriculum */}
         <Route path="/IbCoco" element={<IbCoco/>}/>
         <Route path="/About" element={<About/>}/>
         <Route path="/LearnerProfile" element={<LearnerProfile/>}/>
         <Route path="/Core" element={<Core/>}/>
+        <Route path="/Subject" element={<Subject/>}/>
       </Routes>
     </div>
     </>

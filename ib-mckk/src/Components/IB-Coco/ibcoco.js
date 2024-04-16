@@ -1,42 +1,15 @@
-import { useState } from "react"
-import "./coco.css"
-import { Button, Offcanvas } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { SideBar } from "./sidebar"
 
 export const IbCoco = () => {
-    const [show, setShow] = useState(false);
-
-    return(<>
-        <span id="coco" onMouseEnter={() => setShow(true)}></span>
-
+    return (<>
+    <SideBar/>
+    <div>
+        <img src={require("./ibdp.png")} alt="IB" />
         <div>
-            <Offcanvas show={show} onHide={() => setShow(!show)}>
-                <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>
-                        IB Curriculum
-                    </Offcanvas.Title>
-                </Offcanvas.Header>
-
-                <Offcanvas.Body>
-                    <button>
-                        <Link to="/About">
-                            About Us
-                        </Link>
-                    </button>
-
-                    <button>
-                        <Link to="/LearnerProfile">
-                            Learner Profile
-                        </Link>
-                    </button>
-
-                    <button>
-                        <Link to="/Core">
-                            IB Core
-                        </Link>
-                    </button>
-                </Offcanvas.Body>
-            </Offcanvas>
+            <p>
+            The International Baccalaureate Diploma Programme (DP) provides a challenging, internationally focused, broad and balanced educational experience for students aged 16 to 19. Students are required to study six subjects and a curriculum core concurrently over two years. The programme is designed to equip students with the basic academic skills needed for university study, further education and their chosen profession. Additionally, the programme supports the development of the values and life skills needed to live a ful lled and purposeful life. The Learner Profile and the core are positioned at the centre of the programme, reflecting the priority given to affective disposition as well as cognitive development, and a concern with developing competent and active citizens as well as subject specialists. The core requirements of theory of knowledge (TOK), the extended essay (EE), and creativity, activity, service (CAS) broaden the educational experience and challenge students to apply their knowledge and understanding in real-life contexts.
+            </p>
         </div>
+    </div>
     </>)
 }

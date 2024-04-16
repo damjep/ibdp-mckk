@@ -1,7 +1,9 @@
 import { Card, Carousel, Col, Container, Row } from "react-bootstrap"
+import { SideBar } from "../sidebar"
 
 export default function LearnerProfile() {
     return (<>
+    <SideBar />
         <div>
             <Container>
                 <Row>

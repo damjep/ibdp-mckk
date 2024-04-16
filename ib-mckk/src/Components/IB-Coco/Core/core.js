@@ -1,7 +1,9 @@
 import { Card, Col, Container, Row } from "react-bootstrap"
+import { SideBar } from "../sidebar"
 
 export const Core = () => {
     return (<>
+    <SideBar />
     <div style={{display:"flex", padding: "1em", gap: "1em"}}>
 
         <Card>

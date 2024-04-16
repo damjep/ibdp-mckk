@@ -23,6 +23,11 @@ export const Nav = () => {
                             Administration
                         </Link>
                     </Dropdown.Item>
+                    <Dropdown.Item>
+                        <Link to="/Teacher">
+                            Teachers
+                        </Link>
+                    </Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
 

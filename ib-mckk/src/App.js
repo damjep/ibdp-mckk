@@ -10,6 +10,13 @@ import LearnerProfile from './Components/IB-Coco/LearnerProfile/learner';
 import { Core } from './Components/IB-Coco/Core/core';
 import { Teacher } from './Components/Index/Teachers/teachers';
 import { Subject } from './Components/IB-Coco/Subjects/Subjects';
+import { Schedule } from './Components/IB-Coco/StudentSchedule/Schedule';
+import { Calendar } from './Components/IB-Coco/Calendar/Calendar';
+import { Assessment } from './Components/IB-Coco/Assessment/Assessment';
+import { Counselling } from './Components/Counselling/Counselling';
+import { Support } from './Components/Counselling/StudentSupport/Support';
+import { Guide } from './Components/Counselling/UniGuide/Guide';
+import { Admission } from './Components/Admission/Admission';
 
 function App() {
   return (<>
@@ -27,6 +34,17 @@ function App() {
         <Route path="/LearnerProfile" element={<LearnerProfile/>}/>
         <Route path="/Core" element={<Core/>}/>
         <Route path="/Subject" element={<Subject/>}/>
+        <Route path="/Schedule" element={<Schedule/>}/>
+        <Route path="/Calendar" element={<Calendar/>}/>
+        <Route path="/Assessment" element={<Assessment/>}/>
+
+        {/**Counselling */}
+        <Route path="/Counselling" element={<Counselling/>}/>
+        <Route path="/Support" element={<Support/>}/>
+        <Route path="/Guide" element={<Guide/>}/>
+
+        {/** Admission */}
+        <Route path="/Admission" element={<Admission/>}/>
       </Routes>
     </div>
     </>

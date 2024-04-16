@@ -41,6 +41,24 @@ export const SideBar = () => {
                             What do we study?
                         </Link>
                     </button>
+
+                    <button>
+                        <Link to="/Schedule">
+                            Student Schedule
+                        </Link>
+                    </button>
+
+                    <button>
+                        <Link to="/Calendar">
+                            Calendar
+                        </Link>
+                    </button>
+
+                    <button>
+                        <Link to="/Assessment">
+                            Assessment
+                        </Link>
+                    </button>
                 </Offcanvas.Body>
             </Offcanvas>
         </div>

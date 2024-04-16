@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Top from './Components/topContact/topContact';
-import { Nav } from './Components/Nav/navBar';
+import { NavBar } from './Components/Nav/navBar';
 import { Footer } from './Components/Footer/footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Top />
-      <Nav />
+      <NavBar />
       <App />
       <Footer />
     </Router>

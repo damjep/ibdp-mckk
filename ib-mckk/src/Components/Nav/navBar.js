@@ -1,48 +1,66 @@
 import { Link } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import "./nav.css"
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 
-export const Nav = () => {
+export const NavBar = () => {
     return (<>
         <div>
-            <Dropdown >
-                <Dropdown.Toggle id="test" >
-                    <Link to='/'>
-                        Home
-                    </Link>
-                </Dropdown.Toggle>
+            <Navbar>
+                <Container>
+                    <Navbar.Brand>IBDP MCKK</Navbar.Brand>
 
-                <Dropdown.Menu id="test">
-                    <Dropdown.Item>
-                        <Link to="/Bog">
-                            Board of Governors
-                        </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                        <Link to="/Admin">
-                            Administration
-                        </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                        <Link to="/Teacher">
-                            Teachers
-                        </Link>
-                    </Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
+                    <Navbar.Collapse>
+                        <Nav>
+                            <Nav.Link href="/">
+                                Home
+                            </Nav.Link>
+                            
+                            <NavDropdown>
+                                <NavDropdown.Item href="/Bog">
+                                    <NavDropdown.ItemText>
+                                        Board of Governors
+                                    </NavDropdown.ItemText>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/Admin">
+                                    <NavDropdown.ItemText>
+                                        Administration
+                                    </NavDropdown.ItemText>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="/Teachers">
+                                    <NavDropdown.ItemText>
+                                        Teachers
+                                    </NavDropdown.ItemText>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
 
-            <Dropdown>
-                <Dropdown.Toggle>
-                    <Link to="/IbCoco">
-                        IB Curriculum
-                    </Link>
-                </Dropdown.Toggle>
-            </Dropdown>
-            <button>Counselling</button>
-            <button>Admission</button>
-            <button>Student's Corner</button>
-            <button>Resources</button>
-            <button>Contact Us</button>
+                        <Nav>
+                            <Nav.Link href="/IbCoco">
+                                IB Curriculum
+                            </Nav.Link>
+                        </Nav>
+
+                        <Nav>
+                            <Nav.Link href="/Counselling">
+                                Counselling
+                            </Nav.Link>
+                        </Nav>
+
+                        <Nav>
+                            <Nav.Link href="/Admission">
+                                Admission
+                            </Nav.Link>
+                        </Nav>
+
+                        <Nav>
+                            <Nav.Link href="/">
+                            </Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+                
         </div>
     </>)
 }

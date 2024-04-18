@@ -18,6 +18,9 @@ import { Support } from './Components/Counselling/StudentSupport/Support';
 import { Guide } from './Components/Counselling/UniGuide/Guide';
 import { Admission } from './Components/Admission/Admission';
 import { Contact } from './Components/Contact/contact';
+import { StudentMain } from './Components/StudentCorner/StudentMain';
+import { Facilities } from './Components/StudentCorner/Facilities/Facilities';
+import { Activities } from './Components/StudentCorner/Activities/Activities';
 
 function App() {
   return (<>
@@ -46,6 +49,11 @@ function App() {
 
         {/** Admission */}
         <Route path="/Admission" element={<Admission/>}/>
+
+        {/** Student's Corner */}
+        <Route path='/Student' element={<StudentMain/>} />
+        <Route path='/Facilities' element={<Facilities/>} />
+        <Route path='/Activities' element={<Activities/>} />
 
         {/** Contact */}
         <Route path='/Contact' element={<Contact/>} />

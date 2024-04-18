@@ -56,6 +56,26 @@ export const NavBar = () => {
                                 Contact
                             </Nav.Link>
                         </Nav>
+
+                        <Nav>
+                            <Nav.Link href="/Student">
+                                Student's Corner
+                            </Nav.Link>
+
+                            <NavDropdown>
+                                <NavDropdown.Item href="/Facilities">
+                                    <NavDropdown.ItemText>
+                                        Facilities
+                                    </NavDropdown.ItemText>
+                                </NavDropdown.Item>
+
+                                <NavDropdown.Item href="/Activities">
+                                    <NavDropdown.ItemText>
+                                        Activities
+                                    </NavDropdown.ItemText>
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

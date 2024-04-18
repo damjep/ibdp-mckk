@@ -25,7 +25,7 @@ export const NavBar = () => {
                                         Administration
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="/Teachers">
+                                <NavDropdown.Item href="/Teacher">
                                     <NavDropdown.ItemText>
                                         Teachers
                                     </NavDropdown.ItemText>
@@ -52,7 +52,8 @@ export const NavBar = () => {
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="/">
+                            <Nav.Link href="/Contact">
+                                Contact
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

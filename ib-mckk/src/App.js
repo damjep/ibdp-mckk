@@ -17,6 +17,7 @@ import { Counselling } from './Components/Counselling/Counselling';
 import { Support } from './Components/Counselling/StudentSupport/Support';
 import { Guide } from './Components/Counselling/UniGuide/Guide';
 import { Admission } from './Components/Admission/Admission';
+import { Contact } from './Components/Contact/contact';
 
 function App() {
   return (<>
@@ -45,6 +46,9 @@ function App() {
 
         {/** Admission */}
         <Route path="/Admission" element={<Admission/>}/>
+
+        {/** Contact */}
+        <Route path='/Contact' element={<Contact/>} />
       </Routes>
     </div>
     </>

@@ -109,8 +109,6 @@ export const Data = () => {
                     }
                 ]
             },
-            
-            
         ]
     )
 }

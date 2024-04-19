@@ -16,9 +16,6 @@ export const Achievement = () => {
 
 function HighAchievers() {
     const CohortAlumni = Data();
-    const CohortNumber = [...CohortAlumni.map((item) => {
-        return item.cohort;
-    })]
 
     return (<>
     <div>

@@ -58,6 +58,12 @@ export const NavBar = () => {
                         </Nav>
 
                         <Nav>
+                            <Nav.Link href="/Achievement">
+                                Achievement
+                            </Nav.Link>
+                        </Nav>
+
+                        <Nav>
                             <Nav.Link href="/Student">
                                 Student's Corner
                             </Nav.Link>

@@ -16,119 +16,42 @@ export const Achievement = () => {
 
 function HighAchievers() {
     const CohortAlumni = Data();
-    const CohortNumber = [CohortAlumni.map((item) => {
+    const CohortNumber = [...CohortAlumni.map((item) => {
         return item.cohort;
-    })];
+    })]
 
     return (<>
     <div>
         <h1>Our High Achievers</h1>
         <div>
-            <p>Cohort {CohortNumber[0]}</p>
             <Accordion>
-                {/** Cohort 7 */}
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header>
-                        Cohort 7
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        <Container>
-                            <Row>
-                                {/* Map over the array of achievements */}
-                                {CohortAlumni.map((item, index) => {
-                                    if (item.id === "c7") {
-                                        return (
-                                            <Col key={index}>
-                                                <div>
-                                                    <img src={require(`./Alumni/${item.id}/${item.src}`)} alt="C7" width={"50%"} />
-                                                </div>
-                                            </Col>
-                                        );
-                                    }
-                                    return null;
-                                })}
-                            </Row>
-                        </Container>
-                    </Accordion.Body>
-                </Accordion.Item>
-                
-                {/** Cohort 8 */}
-                <Accordion.Item eventKey="1">
-                    <Accordion.Header>
-                        Cohort 8
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        <Container>
-                            <Row>
-                                {/* Map over the array of achievements */}
-                                {CohortAlumni.map((item, index) => {
-                                    if (item.id === "c8") {
-                                        return (
-                                            <Col key={index}>
-                                                <div>
-                                                    <img src={require(`./Alumni/${item.id}/${item.src}`)} alt="C7" width={"50%"} />
-                                                </div>
-                                            </Col>
-                                        );
-                                    }
-                                    return null;
-                                })}
-                            </Row>
-                        </Container>
-                    </Accordion.Body>
-                </Accordion.Item>
-
-                {/** Cohort 9 */}
-                <Accordion.Item eventKey="2">
-                    <Accordion.Header>
-                        Cohort 9
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        <Container>
-                            <Row>
-                                {/* Map over the array of achievements */}
-                                {CohortAlumni.map((item, index) => {
-                                    if (item.id === "c9") {
-                                        return (
-                                            <Col key={index}>
-                                                <div>
-                                                    <img src={require(`./Alumni/${item.id}/${item.src}`)} alt="C7" width={"50%"} />
-                                                </div>
-                                            </Col>
-                                        );
-                                    }
-                                    return null;
-                                })}
-                            </Row>
-                        </Container>
-                    </Accordion.Body>
-                </Accordion.Item>
-
-                {/** Cohort 10 */}
-                <Accordion.Item eventKey="3">
-                    <Accordion.Header>
-                        Cohort 10
-                    </Accordion.Header>
-                    <Accordion.Body>
-                        <Container>
-                            <Row>
-                                {/* Map over the array of achievements */}
-                                {CohortAlumni.map((item, index) => {
-                                    if (item.id === "c10") {
-                                        return (
-                                            <Col key={index}>
-                                                <div>
-                                                    <img src={require(`./Alumni/${item.id}/${item.src}`)} alt="C7" width={"50%"} />
-                                                </div>
-                                            </Col>
-                                        );
-                                    }
-                                    return null;
-                                })}
-                            </Row>
-                        </Container>
-                    </Accordion.Body>
-                </Accordion.Item>
+                {CohortAlumni.map((item, index) => {
+                    return (<>
+                        <Accordion.Item key={index}>
+                            <Accordion.Header>
+                                    Cohort {String(item.cohort)}
+                            </Accordion.Header>
+                            <Accordion.Body>
+                                <Container>
+                                    <Row>
+                                        {item.data.map((i, d) => {
+                                            return (<>
+                                                <Col key={d}>
+                                                    <div>
+                                                        <img src={require(`./Alumni/${i.id}/${i.src}`)} alt="C7" width={"50%"} />
+                                                        <p>
+                                                            {i.grade} / 45
+                                                        </p>
+                                                    </div>
+                                                </Col>
+                                            </>)
+                                        })}
+                                    </Row>
+                                </Container>
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </>)
+                })}
             </Accordion>
         </div>
     </div>

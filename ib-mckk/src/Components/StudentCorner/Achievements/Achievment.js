@@ -24,18 +24,19 @@ function HighAchievers() {
             <Accordion>
                 {CohortAlumni.map((item, index) => {
                     return (<>
-                        <Accordion.Item key={index}>
+                        <Accordion.Item key={index} eventKey={index}>
                             <Accordion.Header>
                                     Cohort {String(item.cohort)}
                             </Accordion.Header>
                             <Accordion.Body>
                                 <Container>
-                                    <Row>
+                                    <Row >
                                         {item.data.map((i, d) => {
                                             return (<>
-                                                <Col key={d}>
+                                                <Col key={d} md={item.md}>
                                                     <div>
                                                         <img src={require(`./Alumni/${i.id}/${i.src}`)} alt="C7" width={"50%"} />
+                                                        <h4>{i.name}</h4>
                                                         <p>
                                                             {i.grade} / 45
                                                         </p>

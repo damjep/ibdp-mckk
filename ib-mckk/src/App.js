@@ -22,6 +22,7 @@ import { StudentMain } from './Components/StudentCorner/StudentMain';
 import { Facilities } from './Components/StudentCorner/Facilities/Facilities';
 import { Activities } from './Components/StudentCorner/Activities/Activities';
 import { Achievement } from './Components/StudentCorner/Achievements/Achievment';
+import { Graduation } from './Components/StudentCorner/Graduation/Graduation';
 
 function App() {
   return (<>
@@ -55,12 +56,12 @@ function App() {
         <Route path='/Student' element={<StudentMain/>} />
         <Route path='/Facilities' element={<Facilities/>} />
         <Route path='/Activities' element={<Activities/>} />
+        <Route path='/Achievement' element={<Achievement/>} />
+        <Route path='/Graduation' element={<Graduation/>} />
 
         {/** Contact */}
         <Route path='/Contact' element={<Contact/>} />
-
-        {/** Achievement */}
-        <Route path='/Achievement' element={<Achievement/>} />
+                
       </Routes>
     </div>
     </>

@@ -80,6 +80,12 @@ export const NavBar = () => {
                                         Activities
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
+
+                                <NavDropdown.Item href="/Graduation">
+                                    <NavDropdown.ItemText>
+                                        Graduation
+                                    </NavDropdown.ItemText> 
+                               </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

@@ -1,9 +1,20 @@
 import {ReactComponent as IB} from "./ib-home.svg"
+import "./Main.css"
+import { motion } from "framer-motion"
 
 export const Main = () => {
     return (
         <>
-        <Image/> 
+        <motion.div
+            animate={{rotate:360}}
+        >
+            <div className="main-container">
+            <div className="image-main-div">
+                <Image/>
+            </div>
+        </div>
+        </motion.div>
+        
         <Vision />
         </>
     )
@@ -11,9 +22,7 @@ export const Main = () => {
 
 const Image = () => {
     return (<>
-        <div>
-            <IB />
-        </div>
+        <IB />
     </>)
 }
 

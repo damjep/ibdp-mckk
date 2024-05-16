@@ -12,10 +12,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <Top />
-      <NavBar />
-      <App />
-      <Footer />
+      <div className='index'>
+        <div className='index-nav'>
+          <Top />
+          <NavBar />
+        </div>
+        
+        <div className='index-main'>
+          <App />
+        </div>
+        
+        <div className='index-footer'>
+          <Footer />
+        </div>
+      </div>
     </Router>
   </React.StrictMode>
 );

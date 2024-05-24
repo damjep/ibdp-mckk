@@ -29,10 +29,10 @@ function App() {
     <div className="App">
       <Routes>
         {/**Home */}
-        <Route path='/' element={<Main/>}/>
-        <Route path="/Bog" element={<Bog/>}/>
-        <Route path="/Admin" element={<Admin/>}/>
-        <Route path="/Teacher" element={<Teacher/>}/>
+        <Route path='https://damjep.github.io/ibdp-mckk/#/' element={<Main/>}/>
+        <Route path="https://damjep.github.io/ibdp-mckk/#/Bog" element={<Bog/>}/>
+        <Route path="https://damjep.github.io/ibdp-mckk/#/Admin" element={<Admin/>}/>
+        <Route path="https://damjep.github.io/ibdp-mckk/#/Teacher" element={<Teacher/>}/>
 
         {/**Curriculum */}
         <Route path="/IbCoco" element={<IbCoco/>}/>

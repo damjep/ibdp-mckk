@@ -13,22 +13,22 @@ export const NavBar = () => {
 
                     <Navbar.Collapse>
                         <Nav>
-                            <Nav.Link href="/">
+                            <Nav.Link href="https://damjep.github.io/ibdp-mckk/#/">
                                 <button onClick={() => navigate("https://damjep.github.io/ibdp-mckk/#")}>Home</button>
                             </Nav.Link>
                             
                             <NavDropdown>
-                                <NavDropdown.Item href="/Bog">
+                                <NavDropdown.Item href="https://damjep.github.io/ibdp-mckk/#/Bog">
                                     <NavDropdown.ItemText>
                                         <button onClick={() => navigate("https://damjep.github.io/ibdp-mckk/#/Bog")}>Board of Governors</button>
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="/Admin">
+                                <NavDropdown.Item href="https://damjep.github.io/ibdp-mckk/#/Admin">
                                     <NavDropdown.ItemText>
                                         Administration
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="/Teacher">
+                                <NavDropdown.Item href="https://damjep.github.io/ibdp-mckk/#/Teacher">
                                     <NavDropdown.ItemText>
                                         Teachers
                                     </NavDropdown.ItemText>

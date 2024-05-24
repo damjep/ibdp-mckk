@@ -37,54 +37,54 @@ export const NavBar = () => {
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="/IbCoco">
+                            <Nav.Link href="https://damjep.github.io/ibdp-mckk/#/IbCoco">
                                 IB Curriculum
                             </Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="/Counselling">
+                            <Nav.Link href="https://damjep.github.io/ibdp-mckk/#/Counselling">
                                 Counselling
                             </Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="/Admission">
+                            <Nav.Link href="https://damjep.github.io/ibdp-mckk/#/Admission">
                                 Admission
                             </Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="/Contact">
+                            <Nav.Link href="https://damjep.github.io/ibdp-mckk/#/Contact">
                                 Contact
                             </Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="/Achievement">
+                            <Nav.Link href="https://damjep.github.io/ibdp-mckk/#/Achievement">
                                 Achievement
                             </Nav.Link>
                         </Nav>
 
                         <Nav>
-                            <Nav.Link href="/Student">
+                            <Nav.Link href="https://damjep.github.io/ibdp-mckk/#/Student">
                                 Student's Corner
                             </Nav.Link>
 
                             <NavDropdown>
-                                <NavDropdown.Item href="/Facilities">
+                                <NavDropdown.Item href="https://damjep.github.io/ibdp-mckk/#/Facilities">
                                     <NavDropdown.ItemText>
                                         Facilities
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
 
-                                <NavDropdown.Item href="/Activities">
+                                <NavDropdown.Item href="https://damjep.github.io/ibdp-mckk/#/Activities">
                                     <NavDropdown.ItemText>
                                         Activities
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
 
-                                <NavDropdown.Item href="/Graduation">
+                                <NavDropdown.Item href="https://damjep.github.io/ibdp-mckk/#/Graduation">
                                     <NavDropdown.ItemText>
                                         Graduation
                                     </NavDropdown.ItemText> 

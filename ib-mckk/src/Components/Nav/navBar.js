@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router";
 import "./nav.css"
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 export const NavBar = () => {
+    const navigate = useNavigate();
+
     return (<>
         <div>
             <Navbar>
@@ -11,13 +14,13 @@ export const NavBar = () => {
                     <Navbar.Collapse>
                         <Nav>
                             <Nav.Link href="/">
-                                Home
+                                <button onClick={navigate("/")}>Home</button>
                             </Nav.Link>
                             
                             <NavDropdown>
                                 <NavDropdown.Item href="/Bog">
                                     <NavDropdown.ItemText>
-                                        Board of Governors
+                                        <button onClick={navigate("/Bog")}>Board of Governors</button>
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/Admin">

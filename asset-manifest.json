@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ibdp-mckk/static/css/main.5e566f63.css",
-    "main.js": "/ibdp-mckk/static/js/main.8cba9b00.js",
+    "main.js": "/ibdp-mckk/static/js/main.ce96fe98.js",
     "static/js/453.0dd7517d.chunk.js": "/ibdp-mckk/static/js/453.0dd7517d.chunk.js",
     "static/media/Prospectus April 2020.pdf": "/ibdp-mckk/static/media/Prospectus April 2020.89a4ffc17bb3782e76ca.pdf",
     "static/media/counselling_1.mp4": "/ibdp-mckk/static/media/counselling_1.3fb640dc148cfbeb4b2c.mp4",
@@ -95,11 +95,11 @@
     "static/media/natsir.jpg": "/ibdp-mckk/static/media/natsir.8b0425249982e96837dc.jpg",
     "index.html": "/ibdp-mckk/index.html",
     "main.5e566f63.css.map": "/ibdp-mckk/static/css/main.5e566f63.css.map",
-    "main.8cba9b00.js.map": "/ibdp-mckk/static/js/main.8cba9b00.js.map",
+    "main.ce96fe98.js.map": "/ibdp-mckk/static/js/main.ce96fe98.js.map",
     "453.0dd7517d.chunk.js.map": "/ibdp-mckk/static/js/453.0dd7517d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e566f63.css",
-    "static/js/main.8cba9b00.js"
+    "static/js/main.ce96fe98.js"
   ]
 }

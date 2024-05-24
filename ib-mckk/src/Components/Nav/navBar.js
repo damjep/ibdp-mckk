@@ -14,13 +14,13 @@ export const NavBar = () => {
                     <Navbar.Collapse>
                         <Nav>
                             <Nav.Link href="/">
-                                <button onClick={() => navigate("/")}>Home</button>
+                                <button onClick={() => navigate("https://damjep.github.io/ibdp-mckk/#")}>Home</button>
                             </Nav.Link>
                             
                             <NavDropdown>
                                 <NavDropdown.Item href="/Bog">
                                     <NavDropdown.ItemText>
-                                        <button onClick={() => navigate("/Bog")}>Board of Governors</button>
+                                        <button onClick={() => navigate("https://damjep.github.io/ibdp-mckk/#/Bog")}>Board of Governors</button>
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/Admin">

@@ -14,13 +14,13 @@ export const NavBar = () => {
                     <Navbar.Collapse>
                         <Nav>
                             <Nav.Link href="/">
-                                <button onClick={() => navigate("/")}>Home</button>
+                                Home
                             </Nav.Link>
                             
                             <NavDropdown>
                                 <NavDropdown.Item href="/Bog">
                                     <NavDropdown.ItemText>
-                                        <button onClick={() => navigate("/Bog")}>Board of Governors</button>
+                                        Board of Governors
                                     </NavDropdown.ItemText>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="/Admin">

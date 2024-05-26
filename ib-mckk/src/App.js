@@ -29,38 +29,38 @@ function App() {
     <div className="App">
       <Routes>
         {/**Home */}
-        <Route path='/' element={<Main/>}/>
-        <Route path="/Bog" element={<Bog/>}/>
-        <Route path="/Admin" element={<Admin/>}/>
-        <Route path="/Teacher" element={<Teacher/>}/>
+        <Route path='#/' element={<Main/>}/>
+        <Route path="#/Bog" element={<Bog/>}/>
+        <Route path="#/Admin" element={<Admin/>}/>
+        <Route path="#/Teacher" element={<Teacher/>}/>
 
         {/**Curriculum */}
-        <Route path="/IbCoco" element={<IbCoco/>}/>
-        <Route path="/About" element={<About/>}/>
-        <Route path="/LearnerProfile" element={<LearnerProfile/>}/>
-        <Route path="/Core" element={<Core/>}/>
-        <Route path="/Subject" element={<Subject/>}/>
-        <Route path="/Schedule" element={<Schedule/>}/>
-        <Route path="/Calendar" element={<Calendar/>}/>
-        <Route path="/Assessment" element={<Assessment/>}/>
+        <Route path="#/IbCoco" element={<IbCoco/>}/>
+        <Route path="#/About" element={<About/>}/>
+        <Route path="#/LearnerProfile" element={<LearnerProfile/>}/>
+        <Route path="#/Core" element={<Core/>}/>
+        <Route path="#/Subject" element={<Subject/>}/>
+        <Route path="#/Schedule" element={<Schedule/>}/>
+        <Route path="#/Calendar" element={<Calendar/>}/>
+        <Route path="#/Assessment" element={<Assessment/>}/>
 
         {/**Counselling */}
-        <Route path="/Counselling" element={<Counselling/>}/>
-        <Route path="/Support" element={<Support/>}/>
-        <Route path="/Guide" element={<Guide/>}/>
+        <Route path="#/Counselling" element={<Counselling/>}/>
+        <Route path="#/Support" element={<Support/>}/>
+        <Route path="#/Guide" element={<Guide/>}/>
 
         {/** Admission */}
-        <Route path="/Admission" element={<Admission/>}/>
+        <Route path="#/Admission" element={<Admission/>}/>
 
         {/** Student's Corner */}
-        <Route path='/Student' element={<StudentMain/>} />
-        <Route path='/Facilities' element={<Facilities/>} />
-        <Route path='/Activities' element={<Activities/>} />
-        <Route path='/Achievement' element={<Achievement/>} />
-        <Route path='/Graduation' element={<Graduation/>} />
+        <Route path='#/Student' element={<StudentMain/>} />
+        <Route path='#/Facilities' element={<Facilities/>} />
+        <Route path='#/Activities' element={<Activities/>} />
+        <Route path='#/Achievement' element={<Achievement/>} />
+        <Route path='#/Graduation' element={<Graduation/>} />
 
         {/** Contact */}
-        <Route path='/Contact' element={<Contact/>} />
+        <Route path='#/Contact' element={<Contact/>} />
                 
       </Routes>
     </div>

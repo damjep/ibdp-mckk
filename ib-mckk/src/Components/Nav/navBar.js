@@ -1,100 +1,74 @@
-import { useNavigate } from "react-router";
-import "./nav.css"
+import "./nav.css";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
-    const navigate = useNavigate();
-
-    return (<>
+    return (
         <div>
             <Navbar>
                 <Container>
                     <Navbar.Brand>IBDP MCKK</Navbar.Brand>
-
                     <Navbar.Collapse>
                         <Nav>
-                            <Nav.Link href="/">
+                            <Nav.Link as={Link} to="/">
                                 Home
                             </Nav.Link>
-                            
                             <NavDropdown>
-                                <NavDropdown.Item href="/Bog">
-                                    <NavDropdown.ItemText>
-                                        Board of Governors
-                                    </NavDropdown.ItemText>
+                                <NavDropdown.Item as={Link} to="/Bog">
+                                    Board of Governors
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="/Admin">
-                                    <NavDropdown.ItemText>
-                                        Administration
-                                    </NavDropdown.ItemText>
+                                <NavDropdown.Item as={Link} to="/Admin">
+                                    Administration
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="/Teacher">
-                                    <NavDropdown.ItemText>
-                                        Teachers
-                                    </NavDropdown.ItemText>
+                                <NavDropdown.Item as={Link} to="/Teacher">
+                                    Teachers
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
-
                         <Nav>
-                            <Nav.Link href="/IbCoco">
+                            <Nav.Link as={Link} to="/IbCoco">
                                 IB Curriculum
                             </Nav.Link>
                         </Nav>
-
                         <Nav>
-                            <Nav.Link href="/Counselling">
+                            <Nav.Link as={Link} to="/Counselling">
                                 Counselling
                             </Nav.Link>
                         </Nav>
-
                         <Nav>
-                            <Nav.Link href="/Admission">
+                            <Nav.Link as={Link} to="/Admission">
                                 Admission
                             </Nav.Link>
                         </Nav>
-
                         <Nav>
-                            <Nav.Link href="/Contact">
+                            <Nav.Link as={Link} to="/Contact">
                                 Contact
                             </Nav.Link>
                         </Nav>
-
                         <Nav>
-                            <Nav.Link href="/Achievement">
+                            <Nav.Link as={Link} to="/Achievement">
                                 Achievement
                             </Nav.Link>
                         </Nav>
-
                         <Nav>
-                            <Nav.Link href="/Student">
+                            <Nav.Link as={Link} to="/Student">
                                 Student's Corner
                             </Nav.Link>
-
                             <NavDropdown>
-                                <NavDropdown.Item href="/Facilities">
-                                    <NavDropdown.ItemText>
-                                        Facilities
-                                    </NavDropdown.ItemText>
+                                <NavDropdown.Item as={Link} to="/Facilities">
+                                    Facilities
                                 </NavDropdown.Item>
-
-                                <NavDropdown.Item href="/Activities">
-                                    <NavDropdown.ItemText>
-                                        Activities
-                                    </NavDropdown.ItemText>
+                                <NavDropdown.Item as={Link} to="/Activities">
+                                    Activities
                                 </NavDropdown.Item>
-
-                                <NavDropdown.Item href="/Graduation">
-                                    <NavDropdown.ItemText>
-                                        Graduation
-                                    </NavDropdown.ItemText> 
-                               </NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/Graduation">
+                                    Graduation
+                                </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-                
         </div>
-    </>)
-}
+    );
+};

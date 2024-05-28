@@ -5,32 +5,17 @@ import { motion } from "framer-motion"
 export const Main = () => {
     return (
         <>
-        <motion.div
-            animate={{rotate:360}}
-        >
-            <div className="main-container">
+
+        <div className="main-container">
             <div className="image-main-div">
-                <Image/>
+                <IB/>
             </div>
         </div>
-        </motion.div>
         
-        <Vision />
+        <div>
+            <h1>Vision</h1>
+            <p>Excellence, Harmony , Leadership</p>
+        </div>
         </>
     )
-}
-
-const Image = () => {
-    return (<>
-        <IB />
-    </>)
-}
-
-const Vision  = () => {
-    return (<>
-    <div>
-        <h1>Vision</h1>
-        <p>Excellence, Harmony , Leadership</p>
-    </div>
-    </>)
 }

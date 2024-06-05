@@ -1,32 +1,28 @@
 import {Row, Container, Col} from "react-bootstrap"
+import "./bog.css"
+
 export const Bog = () => {
     return (<>
     <div>
         <h2>Board of Governors</h2>
-        <Sultan />
-        <Chairman />
+        <div className="bog-sultan">
+            <div className="img-sultan">
+                <img src={require("./assets/sultan_nazrin.png")} alt="Royal Patreon"/>
+                <h1>His Royal Higness, Sultan Nazrin Muizzudin Shah</h1>
+                <h4>Royal Patron</h4>
+            </div>
+        </div>
+        
+        <div className="bog-chairmain">
+            <div className="img-cm">
+                <img src={require("./assets/chairman.png")} alt="Chairman"/>
+                <h1>Tun Mohammed Hanif bin Omar</h1>
+                <h4>Chairman</h4>
+            </div>
+        </div>
+        
         <Grid />
     </div>    
-    </>)
-}
-
-const Sultan = () => {
-    return (<>
-    <div>
-        <img src={require("./assets/sultan_nazrin.png")} alt="Royal Patreon"/>
-        <h1>His Royal Higness, Sultan Nazrin Muizzudin Shah</h1>
-        <h4>Royal Patron</h4>
-    </div>
-    </>)
-}
-
-const Chairman = () => {
-    return (<>
-    <div>
-        <img src={require("./assets/chairman.png")} alt="Chairman"/>
-        <h1>Tun Mohammed Hanif bin Omar</h1>
-        <h4>Chairman</h4>
-    </div>
     </>)
 }
 

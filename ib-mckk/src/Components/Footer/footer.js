@@ -1,6 +1,7 @@
+import "./footer.css"
 export const Footer = () => {
     return (<>
-    <footer>
+    <footer className="footer-all">
         <div style={{flex: "auto"}}>
             <h4><b>Contact Us :</b></h4>
             <address>
